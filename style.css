@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800;900&family=Indie+Flower&family=Macondo&family=Roboto:wght@100;300;400;500;700;900&family=Source+Code+Pro:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    font-family: 'Macondo', cursive;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/img1.webp);
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main{
+    width: 80%;
+    height: 80%;
+    opacity: 0.4;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: url(./images/img2.webp);
+}
+
+.box{
+    height: 100%;
+    opacity: 0.7;
+    /* background-color: red; */
+}
+
+.box1{
+    clip-path: polygon(0 0, 43% 0, 100% 100%, 0% 100%);
+    width: 40%;
+    background-image: url(./images//img3.webp);
+}
+
+.box2{
+    width: 40%;
+    transform: rotate(-24.8deg) translate(-24%);
+    height: 160%;
+    margin-top: -17%;
+    background-color: rgb(36, 35, 35);
+}
+
+.box3{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 58% 100%);
+   width: 39%;
+   right: 0;
+   position: absolute;
+   background-position: center;
+   background-size: cover;
+   background-image: url(./images/img4.webp);
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* background-color: red; */
+    z-index: 1;
+    color: white;
+    padding: 8% 2%;
+}
+/* 
+.content h1{
+    color: white;
+    font-size: 90px;
+    text-transform: uppercase;
+    background-image: url(./images/img5.webp);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: center;
+    background-size: cover;
+} */
+
+.content img{
+    cursor: pointer;
+}
+
+.content p{
+    width: 40%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.content a{
+    color: white;
+    font-family: 'Macondo', cursive;
+    margin-left: 1%;
+    font-size: 18px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    width: 5%;
+    transition: .3s linear all;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.content a:hover{
+    width: 5.5%;
+}
+
+
+span{
+    transition: .3s linear all;
+}
+span:hover{
+    letter-spacing: 2px;
+}
+
+.video{
+    width: 20%;
+    height: 25%;
+    /* background-color: red; */
+    background-image: url(https://imgs.search.brave.com/wm2V-kj_J5U8Fx_dgrZU_6LvG7ayijlNG8vTxWNdOro/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC81NFcycHRn/LmpwZw);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    border-radius: 10px;
+    color: #c4c4c4;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    transition: .5s linear all;
+}
+
+.video:hover{
+    scale: 1.1;
+}
+.play i{
+   font-size: 40px;
+}
